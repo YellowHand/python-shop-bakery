@@ -1,0 +1,79 @@
+#header {
+  height: 50px;
+  background: #ac8955;
+  color: #000000;
+}
+#branding h1 {
+  color: #ffffff;
+}
+a:link,
+a:visited {
+  color: #ac8751;
+}
+.paginator a:link, .paginator a:visited {
+  padding: 2px 6px;
+  background: #ac8751 !important;
+  text-decoration: none;
+  color: #fff;
+}
+.paginator a.showall {
+  padding: 0;
+  border: none;
+  background: none;
+  color: #ffffff !important;
+}
+div.breadcrumbs {
+  background: #bc955c;
+  color: #ffffff;
+}
+div.breadcrumbs a {
+  color: #000000;
+}
+div.breadcrumbs a:hover {
+  color: #ffffff;
+}
+.module h2, .module caption, .inline-group h2 {
+  background: #bc955c;
+}
+.button, input[type="submit"], input[type="button"], .submit-row input, a.button {
+  background: #bc955c;
+  color: #ffffff;
+}
+.button:active, input[type="submit"]:active, input[type="button"]:active, .button:focus, input[type="submit"]:focus, input[type="button"]:focus, .button:hover, input[type="submit"]:hover, input[type="button"]:hover {
+  background: #bc955c;
+}
+.button.default:active, input[type="submit"].default:active, .button.default:focus, input[type="submit"].default:focus, .button.default:hover, input[type="submit"].default:hover {
+  background: #bc955c;
+}
+.button.default, input[type="submit"].default, .submit-row input.default {
+  background: #bc955c;
+}
+.section:link, a.section:visited {
+  color: #000000;
+  text-decoration: none;
+}
+a.section:link, a.section:visited {
+  color: #000000 !important;
+  text-decoration: none;
+}
+.module h2, .module caption, .inline-group h2 {
+  color: #000000;
+}
+#user-tools a {
+  border-bottom: 1px solid #ffffff !important;
+}
+#header a:link, #header a:visited {
+  color: #000000 !important;
+}
+#header a:link, #header a:hover {
+  color: #ffffff !important;
+}
+#user-tools a {
+  border-bottom: none !important;
+}
+.paginator a.showall {
+  color: #000000;
+}
+.paginator a:link, .paginator a:visited {
+  background-color: #ffffff;
+}

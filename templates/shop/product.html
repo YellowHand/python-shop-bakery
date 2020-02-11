@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Shop - PVB {% endblock %}
+
+{% block content %}
+<main class="mt-5 pt-4">
+    <div class="container dark-grey-text mt-5">
+        <!--Grid row-->
+      <div class="row wow fadeIn">
+          <!--Grid column-->
+        <div class="col-md-6 mb-4">
+          <img src="{{product.product.image.url}}" class="img-fluid" alt="">
+        </div>
+          <!--Grid column-->
+          <div class="col-md-6 mb-4">
+            <!--Content-->
+            <div class="p-4">
+							<div>
+								<h2>{{product.product.name}}</h2><hr>
+								<p><h4>£{{product.price}}</h4></p><hr>
+								<p class="text-justify"><h6>{{product.product.description}}</h6></p>
+								<p class="text-justify"><h6>Weight: {{product.product.weight}}g</h6></p><hr>
+                {% if product.stock <= 0 %}
+                <div class="float-right">
+                  <form action="" method="post">
+                    {% csrf_token %}
+                    <div class="float-left">
+                    <input min="1" max="10000" type="number" value="1" name="quantity" class="form-control" style="width: 100px" required>
+                  </div>
+                    <input class="btn send-click btn-md my-0 p" type="submit" value="Add to cart">
+                    </form>
+                </div>
+                {% else %}
+                <div class="float-right">
+                <form action="{% url 'cart:add_cart' product.id %}" method="post">
+                  {% csrf_token %}
+                  <div class="float-left">
+                  <input min="1" max="10000" type="number" value="1" name="quantity" class="form-control" style="width: 100px" required>
+                </div>
+                  <input class="btn send-click btn-md my-0 p" type="submit" value="Add to cart">
+                  </form> </div>
+								{% endif %}
+									</div>
+              </div>
+          </div>
+        </div>
+      <hr>
+    </div>
+  </main>
+{% endblock %}
+
+

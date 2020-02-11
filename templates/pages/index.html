@@ -1,0 +1,305 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Polish Village Bakery {% endblock %}
+{% block content %}
+
+<section>
+  <div class="container">
+    <div class="full-width-image">
+      <img src="{% static 'img/slider.png' %}" alt="">
+    </div>
+  </div>
+</section>
+
+
+<div class="col-sm-12 text-base text-center">
+  <div class="col-sm-12"><p>We produce the best breads in the market!</p></div>
+</div>
+
+
+<section>
+  <div class="container">
+        <!-- Grid row -->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-sm-12 sm-12">
+            <div class="row">
+              <div class="col-sm-12">
+                 <div class="text-center about-colores my-2">
+<p>
+All of our loaves are made of 100% sourdough starters apart from our 100% Rye Yeast Free Bread and Wholegrain Breads. Our recipes are simple, based on natural ingredients and traditional techniques.</p>
+<p>
+Almost a 100 years ago, until the widespread use of commercial bakers’ yeast all bread was leavened with wild yeast. Respiring less actively than commercial strains our sourdoughs’ depth of character and flavour develops through a slow-fermentation process that lasts up to 72 hours. Thanks to this, the protein chains naturally bond together, meaning the bread is more digestible and much better for your body.</p>
+<p>
+We refresh our bacteria starter doughs daily to keep the best flavour of our products. Find your favourite bread now!</p>
+              </div>
+            </div>
+          </div>
+       </div>
+     </div>
+  </div>
+</section>
+
+ <!-- Offers -->
+ <section class="text-center mb-4 py-4">
+  <div class="container">
+    <div class="text-center title-ab-br colores my-5">
+      <h4>OUR PRODUCTS</h4>
+    </div>
+    <div class="row">
+
+        
+    <!--Grid column-->
+    <div class="col-lg-3 col-md-3 mb-4">
+      <div class="card">
+        <div class="view overlay">
+          <img src="{% static 'img/pvb/pvb-01_whitebreads.jpg' %}" class="card-img-top" alt="">
+          <a href="{%url 'products'%}#White Breads">
+            <div class="mask rgba-white-slight"></div>
+        </div>
+        <div class="card-body text-center">
+          <h5>
+            <strong>
+              <div  class="text-product"> <a class="text-product" href="{%url 'products'%}#White Breads">White Breads</a></div>
+            </strong>
+          </h5>
+        </div>
+      </div>
+    </div>
+    <!--Grid column-->
+
+    <div class="col-lg-3 col-md-3 mb-4">
+      <div class="card">
+        <div class="view overlay">
+          <img src="{% static 'img/pvb/pvb-02_breadswithseeds.jpg' %}" class="card-img-top" alt="">
+          <a href="{%url 'products'%}#Breads with Seeds">
+            <div class="mask rgba-white-slight"></div>
+        </div>
+        <div class="card-body text-center">
+          <h5>
+            <strong>
+            <div  class="text-product"> <a class="text-product" href="{%url 'products'%}#Breads with Seeds">Breads with Seeds</a></div>
+            </strong>
+          </h5>
+        </div>
+      </div>
+    </div>
+    <!--Grid column-->
+    <div class="col-lg-3 col-md-3 mb-4">
+      <div class="card">
+        <div class="view overlay">
+          <img src="{% static 'img/pvb/pvb-03_brownbreads.jpg' %}" class="card-img-top" alt="">
+          <a href="{%url 'products'%}#Brown Breads">
+            <div class="mask rgba-white-slight"></div>
+        </div>
+        <div class="card-body text-center">
+          <h5>
+            <strong>
+            <div  class="text-product"> <a class="text-product" href="{%url 'products'%}#Brown Breads">Brown Breads</a></div>
+            </strong>
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-3 mb-4">
+      <div class="card">
+        <div class="view overlay">
+          <img src="{% static 'img/pvb/pvb-04_rolls.jpg' %}" class="card-img-top" alt="">
+          <a href="{%url 'products'%}#Rolls">
+            <div class="mask rgba-white-slight"></div>
+        </div>
+        <div class="card-body text-center">
+          <h5>
+            <strong>
+            <div  class="text-product"> <a class="text-product" href="{%url 'products'%}#Rolls">Rolls</a></div>
+            </strong>
+          </h5>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-lg-3 col-md-3 mb-4">
+      <div class="card">
+        <div class="view overlay">
+          <img src="{% static 'img/pvb/pvb-05_sweetcollection.jpg' %}" class="card-img-top" alt="">
+          <a href="{%url 'products'%}#Sweet Selection">
+            <div class="mask rgba-white-slight"></div>
+        </div>
+        <div class="card-body text-center">
+          <h5>
+            <strong>
+            <div  class="text-product"> <a class="text-product" href="{%url 'products'%}#Sweet Selection">Sweet Selection</a></div>
+            </strong>
+          </h5>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-lg-3 col-md-3 mb-4">
+      <div class="card">
+        <div class="view overlay">
+          <img src="{% static 'img/pvb/pvb-06_cakes.jpg' %}" class="card-img-top" alt="">
+          <a href="{%url 'products'%}#Cakes">
+            <div class="mask rgba-white-slight"></div>
+        </div>
+        <div class="card-body text-center">
+          <h5>
+            <strong>
+            <div  class="text-product"> <a class="text-product" href="{%url 'products'%}#Cakes">Cakes</a></div>
+            </strong>
+          </h5>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-lg-3 col-md-3 mb-4">
+      <div class="card">
+        <div class="view overlay">
+          <img src="{% static 'img/pvb/pvb-07_frozen.jpg' %}" class="card-img-top" alt="">
+          <a href="{%url 'products'%}#Frozen">
+            <div class="mask rgba-white-slight"></div>
+        </div>
+        <div class="card-body text-center">
+          <h5>
+            <strong>
+            <div  class="text-product"> <a class="text-product" href="{%url 'products'%}#Frozen">Frozen</a></div>
+            </strong>
+          </h5>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-lg-3 col-md-3 mb-4">
+      <div class="card">
+        <div class="view overlay">
+          <img src="{% static 'img/pvb/pvb-08_frozen.jpg' %}" class="card-img-top" alt="">
+          <a href="{%url 'products'%}#Others">
+            <div class="mask rgba-white-slight"></div>
+        </div>
+        <div class="card-body text-center">
+          <h5>
+            <strong>
+            <div  class="text-product"> <a class="text-product" href="{%url 'products'%}#Others">Others</a></div>
+            </strong>
+          </h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-12 col-md-12">
+    <a class="not-active btn-block text-white send-click-shop" href="{% url 'products' %}">
+    <button class="btn btn-block btn-lg text-white send-click-shop">
+      <i class="fas fa-search colores"></i> SEE MORE...
+    </button></a>
+    </div>
+  </div>
+</div>
+</section>
+
+  
+  
+  <!-- About -->
+  <section>
+  <div class="container">
+        <!-- Heading -->
+        <div class="my-5"> </div>
+        <!-- Grid row -->
+        <div class="row">
+          <!-- Grid column -->
+  
+          <div class="col-sm-12 sm-12">
+            <!-- Card -->
+
+                <div class="text-center title-ab-br colores">
+                <h4>ABOUT</h4>
+              </div>
+              <!-- Card content -->
+
+                <div class="row">
+  
+                  <div class="col-sm-12">
+                    
+                     <div class="text-center about-colores my-2"><p> Polish Village Bakery was established in 2004 and has since become a favorite brand of locals in the North West England area. At the Polish Village Bakery, we continually strive to improve the taste and range of our breads and rolls, which are all handmade and wherever possible, based on authentic Polish recipes.</p><p>
+                      We believe in delivering quality products at affordable prices along with outstanding customer service. In order to achieve this we invest a great deal of time and money in training, product development and future design to ensure that PVB is the best bakery brand around!</p> </div>
+                  
+                  </div>
+  
+                </div>
+
+            </div>
+
+  
+        </div>
+      </div>
+  </section>
+  
+  
+  <!-- Marks -->
+  <section>
+  <div class="container">
+        <!-- Heading -->
+        <div class="my-5"> </div>
+        <!-- Grid row -->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-12 mb-12">
+            <!-- Card -->
+            <div class="text-center title-ab-br colores">
+                <h4>OUR BRANDS</h4>
+              </div>
+              <!-- Card content -->
+
+                <div class="row my-1">
+  
+                  <div class="col-sm-3">
+
+                      <figure>
+                        <div class="view overlay">
+                        <img src="{% static 'img/logo.png' %}" class="card-img-top" alt="">
+                      </div>
+                      </figure>
+
+                  </div>
+
+                  <div class="col-sm-3">
+
+                      <figure>
+                        <div class="view overlay">
+                        <img src="{% static 'img/mark1.png' %}" class="card-img-top" alt="">
+                      </div>
+                      </figure>
+
+                  </div>
+  
+                  <div class="col-sm-3">
+
+                      <figure>
+                        <div class="view overlay">
+                        <img src="{% static 'img/mark2.png' %}" class="card-img-top" alt="">
+                        </div>
+                      </figure>
+
+                  </div>
+  
+                    <div class="col-sm-3">
+
+                      <figure>
+                        <div class="view overlay">
+                        <img src="{% static 'img/mark3.png' %}" class="card-img-top" alt="">
+                        </div>
+                      </figure>
+
+                  </div>
+  
+                </div>
+              </form>
+
+          </div>
+        </div>
+        </section>
+
+{% endblock %}

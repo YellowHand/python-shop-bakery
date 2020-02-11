@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Shop - PVB {% endblock %}
+
+{% block content %}
+
+<!-- Alerts -->
+{% include 'partials/_alerts.html' %}
+
+
+  <section id="marks">
+    <div class="container">
+      <header>
+        <h1>Your Offer</h1>
+      </header>
+    </div>
+  </section>
+  
+  <!-- Offers -->
+        <section class="text-center mb-4 py-4">
+          <div class="container">
+            <div class="row">
+								{% if user.is_authenticated %}
+								{% if products.object_list  %}
+								{% for product in products.object_list %}
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card">
+                <div class="view overlay">
+                  <img src="{{ product.product.image.url }}" class="card-img-top" alt="">
+                  <a href="{{product.get_url}}">
+                    <div class="mask rgba-white-slight"></div>
+                  </a>
+                </div>
+                <div class="card-body text-center">
+                    <h6 class="grey-text">{{ product.product.category }}</h6>
+                  <h5>
+                    <strong>
+                      <a href="{{product.get_url}}" class="text-product">{{ product.product.name }}</a>
+                    </strong>
+                  </h5>
+                  <p><h6>£{{ product.price }}</h6></p>
+                </div>
+              </div>
+            </div>
+            <!--Grid column-->
+            {% endfor %}
+            {% endif %}
+          </div>
+        </div>
+        </section>
+		<div class="mx-auto">
+			{% if products.paginator.num_pages > 1 %}
+				<div class="text-center">
+					{% for pg in products.paginator.page_range %}
+						<a href="?page={{pg}}" class="btn btn-light btn-sm {% if products.number == pg %}active{% endif %}">{{ pg }}</a>
+					{% endfor %}
+				</div>
+			{% endif %}
+		</div>
+		{% else %}
+		<div class="col-sm-12 sm-12">
+				<p>No Products Available</p>
+			</div>
+		{% endif %}
+{% endblock %}
+
+
+
+

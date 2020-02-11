@@ -1,0 +1,36 @@
+{% load static %}
+
+ <!-- Top Bar -->
+ <section class="mt-1">
+  <div class="container">
+    <div class="row">
+      <ul class="mt-1">
+        <i class="colores fas fa-phone"></i>  0161-820-4876
+      </ul>
+      <ul class="ml-auto ml-2 mt-1">
+        <div class="colores social text-right">
+          {% if request.user.is_staff %}
+          <a class="colores mr-3" target="_blank" rel="noopener noreferrer" href="{% url 'admin:index' %}">Panel Admin</a>
+          {% endif %}
+          <a target="_blank" rel="noopener noreferrer" href="https://pl-pl.facebook.com/POLISHVILLAGEBAKERYLTD">
+            <i class="social-media colores fab fa-facebook"></i>
+          </a>
+          <a>
+            <i class="social-media colores fab fa-instagram"></i>
+          </a>
+          <a>
+            <i class="social-media colores fab fa-twitter"></i>
+          </a>
+        </div>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<nav> 
+  <div class="navbar-center p-logo">
+    <img src="{% static 'img/logo.png' %}" class="logo center" alt="">
+  </a> </div>
+</nav>
+
+

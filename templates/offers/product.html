@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} {{ product.product_name }} - PVB {% endblock %}
+{% block content %}
+
+<main class="mt-5 pt-4">
+    <div class="container dark-grey-text mt-5">
+        <!--Grid row-->
+      <div class="row wow fadeIn">
+          <!--Grid column-->
+        <div class="col-md-6 mb-4">
+          <img src="{{ product.photo.url }}" class="img-fluid" alt="">
+        </div>
+          <!--Grid column-->
+          <div class="col-md-6 mb-4">
+              <!--Content-->
+              <div class="p-4">
+                <div>
+                  <h2>{{product.product_name}}</h2><hr>
+                  <p class="text-justify"><h6>{{product.description}}</h6></p>
+                  <p class="text-justify"><h6>Weight: {{product.weight}}g</h6></p><hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <hr>
+    </div>
+  </main>
+
+{% endblock %}
